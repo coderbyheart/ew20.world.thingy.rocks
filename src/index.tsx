@@ -6,10 +6,7 @@ console.log(
 	'%c ThingyWorld ',
 	'background-color: #00a9ce; color: #ffffff; padding: 0.25rem;',
 	'Source code:',
-	'https://github.com/coderbyheart/world.thingy.rocks',
+	'https://github.com/coderbyheart/ew20.world.thingy.rocks',
 )
 
-ReactDOM.render(
-	<Map />,
-	document.getElementById('map'),
-)
+ReactDOM.render(<Map />, document.getElementById('map'))

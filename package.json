@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/coderbyheart/world.thingy.rocks.git"
+    "url": "git+https://github.com/coderbyheart/ew20.world.thingy.rocks.git"
   },
   "keywords": [
     "nRF Connect for Cloud",
@@ -19,9 +19,9 @@
   "author": "Nordic Semiconductor ASA | https://nordicsemi.com",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/coderbyheart/world.thingy.rocks/issues"
+    "url": "https://github.com/coderbyheart/ew20.world.thingy.rocks/issues"
   },
-  "homepage": "https://github.com/coderbyheart/world.thingy.rocks#readme",
+  "homepage": "https://github.com/coderbyheart/ew20.world.thingy.rocks#readme",
   "dependencies": {
     "@bifravst/rsrp-bar": "^2.0.0",
     "@types/react-dom": "^16.9.5",
