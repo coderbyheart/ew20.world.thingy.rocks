@@ -1,0 +1,1199 @@
+{
+    "devices": [
+        {
+            "shortId": 0,
+            "deviceId": "ade6d927-a190-4406-8670-71be4f393af6",
+            "name": "ade6d927-a190-4406-8670-71be4f393af6",
+            "airQuality": 25,
+            "pressure": 966,
+            "imei": "352656100986846",
+            "networkInfo": {
+                "currentBand": 3,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 3305,
+                "mccmnc": "24202",
+                "ipAddress": "10.81.191.14",
+                "ueMode": 0,
+                "cellID": 34237213,
+                "networkMode": "NB-IoT GPS"
+            }
+        },
+        {
+            "shortId": 1,
+            "deviceId": "b15ae496-ba03-4fa8-ae92-3aa616f96c6e",
+            "cellGeolocation": {
+                "lat": 49.411836,
+                "lng": 11.112768,
+                "accuracy": 3846,
+                "ts": "2020-02-27T15:32:46.774Z"
+            },
+            "name": "EW20",
+            "humidity": 22.7,
+            "airQuality": 189.5,
+            "pressure": 959,
+            "temp": 24.9,
+            "rsrpDbm": -117,
+            "imei": "352656100743478",
+            "networkInfo": {
+                "currentBand": 8,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 53009,
+                "mccmnc": "26201",
+                "ipAddress": "100.118.127.47",
+                "ueMode": 0,
+                "cellID": 28043784,
+                "networkMode": "NB-IoT GPS"
+            }
+        },
+        {
+            "shortId": 2,
+            "deviceId": "32bf214b-d259-4189-8d00-0f8bb946c1ad",
+            "name": "32bf214b-d259-4189-8d00-0f8bb946c1ad",
+            "airQuality": 177.3,
+            "pressure": 958,
+            "humidity": 28.1,
+            "temp": 25.2,
+            "rsrpDbm": -90,
+            "imei": "352656100971871",
+            "networkInfo": {
+                "currentBand": 20,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 5863,
+                "mccmnc": "26203",
+                "ipAddress": "10.40.166.246",
+                "ueMode": 0,
+                "cellID": 20661093,
+                "networkMode": "NB-IoT GPS"
+            }
+        },
+        {
+            "shortId": 3,
+            "deviceId": "39fe9ec1-bfc7-439a-ad88-1b3411db50db",
+            "cellGeolocation": {
+                "lat": 63.40548,
+                "lng": 10.428742,
+                "accuracy": 1645,
+                "ts": "2020-02-27T18:38:24.246Z"
+            },
+            "name": "UDP04",
+            "pressure": 980,
+            "humidity": 60.7,
+            "airQuality": 242.5,
+            "temp": -4.8,
+            "rsrpDbm": -59,
+            "imei": "352656100972028",
+            "networkInfo": {
+                "currentBand": 20,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 30401,
+                "mccmnc": "24201",
+                "ipAddress": "10.160.195.29",
+                "ueMode": 2,
+                "cellID": 17756418,
+                "networkMode": "LTE-M GPS"
+            }
+        },
+        {
+            "shortId": 4,
+            "deviceId": "c46c8cca-5e15-4aeb-8b9d-2bb85363564b",
+            "cellGeolocation": {
+                "lat": 63.413929,
+                "lng": 10.432184,
+                "accuracy": 2468,
+                "ts": "2020-02-27T00:23:51.807Z"
+            },
+            "name": "c46c8cca-5e15-4aeb-8b9d-2bb85363564b",
+            "temp": 19.3,
+            "airQuality": 212.2,
+            "pressure": 982,
+            "humidity": 13.7,
+            "rsrpDbm": -83,
+            "imei": "352656100836173",
+            "networkInfo": {
+                "currentBand": 20,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 30401,
+                "mccmnc": "24201",
+                "ipAddress": "10.98.92.128 2A02:2121:0045:135D:0000:0044:5628:3D01",
+                "ueMode": 2,
+                "cellID": 21627653,
+                "networkMode": "LTE-M GPS"
+            }
+        },
+        {
+            "shortId": 5,
+            "deviceId": "c4475ec2-91b2-43e8-b548-0928706629a1",
+            "name": "Rick",
+            "rsrpDbm": -72,
+            "temp": 25.6,
+            "airQuality": 25,
+            "humidity": 51.6,
+            "pressure": 1015,
+            "imei": "352656100828071",
+            "networkInfo": {
+                "currentBand": 8,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 51102,
+                "mccmnc": "46692",
+                "ipAddress": "10.160.46.214",
+                "ueMode": 0,
+                "cellID": 54421369,
+                "networkMode": "NB-IoT GPS"
+            }
+        },
+        {
+            "shortId": 6,
+            "deviceId": "2ef5729a-f57d-47ba-90f1-bbe7ab8cfb67",
+            "geolocation": {
+                "sentenceId": "GGA",
+                "sentenceName": "Global positioning system fix data",
+                "time": "2020-02-26T11:30:08.000Z",
+                "latitude": 22.181833333333334,
+                "longitude": 114.30216666666666,
+                "fixType": "manual",
+                "satellitesInView": 0,
+                "horizontalDilution": 0,
+                "altitudeMeters": 0,
+                "geoidalSeperation": 0,
+                "differentialAge": 0,
+                "differentialRefStn": "",
+                "talkerId": "P"
+            },
+            "name": "PK",
+            "pressure": 1007,
+            "airQuality": 54.9,
+            "humidity": 53.1,
+            "temp": 25.3,
+            "rsrpDbm": -72,
+            "imei": "352656100247728",
+            "networkInfo": {
+                "currentBand": 3,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 50401,
+                "mccmnc": "45412",
+                "ipAddress": "10.41.1.96",
+                "ueMode": 0,
+                "cellID": 26614474,
+                "networkMode": "NB-IoT GPS"
+            }
+        },
+        {
+            "shortId": 7,
+            "deviceId": "39ed6def-1ced-4817-b8ff-58e2672d6068",
+            "cellGeolocation": {
+                "lat": 59.92047,
+                "lng": 10.680411,
+                "accuracy": 675,
+                "ts": "2020-02-27T12:42:03.223Z"
+            },
+            "name": "39ed6def-1ced-4817-b8ff-58e2672d6068",
+            "temp": 22,
+            "humidity": 13.1,
+            "pressure": 1000,
+            "airQuality": 25,
+            "rsrpDbm": -76,
+            "imei": "352656100972234",
+            "networkInfo": {
+                "currentBand": 20,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 30601,
+                "mccmnc": "24201",
+                "ipAddress": "10.160.102.176",
+                "ueMode": 2,
+                "cellID": 17039878,
+                "networkMode": "LTE-M GPS"
+            }
+        },
+        {
+            "shortId": 8,
+            "deviceId": "3fb0050b-cc86-4581-b550-24a71e3a1df5",
+            "geolocation": {
+                "sentenceId": "GGA",
+                "sentenceName": "Global positioning system fix data",
+                "time": "2020-02-27T21:51:50.520Z",
+                "latitude": 28.4351025,
+                "longitude": -82.29766816666667,
+                "fixType": "fix",
+                "satellitesInView": 6,
+                "horizontalDilution": 2.84,
+                "altitudeMeters": 55.43,
+                "geoidalSeperation": 0,
+                "differentialAge": 0,
+                "talkerId": "GP"
+            },
+            "name": "3fb0050b-cc86-4581-b550-24a71e3a1df5",
+            "rsrpDbm": -103,
+            "airQuality": 231.5,
+            "temp": 24,
+            "pressure": 1015,
+            "humidity": 37,
+            "imei": "352656100832917",
+            "networkInfo": {
+                "currentBand": 13,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 36884,
+                "mccmnc": "311480",
+                "ipAddress": "10.160.109.120",
+                "ueMode": 2,
+                "cellID": 37023233,
+                "networkMode": "LTE-M GPS"
+            }
+        },
+        {
+            "shortId": 9,
+            "deviceId": "739a00f6-765f-4e7e-b175-4abe7bcf3b04",
+            "geolocation": {
+                "sentenceId": "GGA",
+                "sentenceName": "Global positioning system fix data",
+                "time": "2020-02-26T11:30:08.000Z",
+                "latitude": 33.67283333333334,
+                "longitude": -117.80866666666667,
+                "fixType": "manual",
+                "satellitesInView": 0,
+                "horizontalDilution": 0,
+                "altitudeMeters": 0,
+                "geoidalSeperation": 0,
+                "differentialAge": 0,
+                "differentialRefStn": "",
+                "talkerId": "P"
+            },
+            "name": "739a00f6-765f-4e7e-b175-4abe7bcf3b04",
+            "airQuality": 83.3,
+            "pressure": 1018,
+            "humidity": 47.3,
+            "temp": 19.3,
+            "rsrpDbm": -103,
+            "imei": "352656100435349",
+            "networkInfo": {
+                "currentBand": 13,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 12034,
+                "mccmnc": "311480",
+                "ipAddress": "10.160.171.112",
+                "ueMode": 2,
+                "cellID": 12107267,
+                "networkMode": "LTE-M GPS"
+            }
+        },
+        {
+            "shortId": 10,
+            "deviceId": "e590980c-be14-4095-b14f-91a52033ed58",
+            "geolocation": {
+                "sentenceId": "GGA",
+                "sentenceName": "Global positioning system fix data",
+                "time": "2020-02-26T11:30:08.000Z",
+                "latitude": 37.32066666666667,
+                "longitude": -122.0015,
+                "fixType": "manual",
+                "satellitesInView": 0,
+                "horizontalDilution": 0,
+                "altitudeMeters": 0,
+                "geoidalSeperation": 0,
+                "differentialAge": 0,
+                "differentialRefStn": "",
+                "talkerId": "P"
+            },
+            "name": "e590980c-be14-4095-b14f-91a52033ed58",
+            "airQuality": 164.9,
+            "pressure": 1016,
+            "humidity": 52.5,
+            "temp": 18.5,
+            "rsrpDbm": -111,
+            "imei": "352656100767444",
+            "networkInfo": {
+                "currentBand": 12,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 35643,
+                "mccmnc": "310410",
+                "ipAddress": "10.0.12.93",
+                "ueMode": 2,
+                "cellID": 168972305,
+                "networkMode": "LTE-M GPS"
+            }
+        },
+        {
+            "shortId": 11,
+            "deviceId": "48e4cbea-d459-44eb-9e80-3e4c00927a07",
+            "geolocation": {
+                "sentenceId": "GGA",
+                "sentenceName": "Global positioning system fix data",
+                "time": "2020-02-26T17:54:34.830Z",
+                "latitude": 30.483004833333332,
+                "longitude": -97.8361475,
+                "fixType": "fix",
+                "satellitesInView": 4,
+                "horizontalDilution": 4.12,
+                "altitudeMeters": 262.83,
+                "geoidalSeperation": 0,
+                "differentialAge": 0,
+                "talkerId": "GP"
+            },
+            "name": "48e4cbea-d459-44eb-9e80-3e4c00927a07",
+            "humidity": 37.4,
+            "pressure": 992,
+            "airQuality": 82.7,
+            "temp": 20.4,
+            "rsrpDbm": -100,
+            "imei": "352656100449738",
+            "networkInfo": {
+                "currentBand": 13,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 35077,
+                "mccmnc": "311480",
+                "ipAddress": "10.160.85.162",
+                "ueMode": 2,
+                "cellID": 35133697,
+                "networkMode": "LTE-M GPS"
+            }
+        },
+        {
+            "shortId": 12,
+            "deviceId": "1f5d18e0-531a-455b-ae23-ce87d072c6f0",
+            "name": "1f5d18e0-531a-455b-ae23-ce87d072c6f0",
+            "rsrpDbm": -91
+        },
+        {
+            "shortId": 13,
+            "deviceId": "704d78e0-0664-470a-b795-5c61b0dc238f",
+            "cellGeolocation": {
+                "lat": 25.054447,
+                "lng": 121.518016,
+                "accuracy": 168,
+                "ts": "2020-02-27T05:31:47.403Z"
+            },
+            "name": "704d78e0-0664-470a-b795-5c61b0dc238f",
+            "airQuality": 57.2,
+            "temp": 24.4,
+            "pressure": 1020,
+            "rsrpDbm": -107,
+            "humidity": 55.8,
+            "imei": "352656100831349",
+            "networkInfo": {
+                "currentBand": 3,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 11104,
+                "mccmnc": "46692",
+                "ipAddress": "10.174.93.58 0000:0000:0000:0000:853C:1CD0:CE40:C49B",
+                "ueMode": 2,
+                "cellID": 54419735,
+                "networkMode": "LTE-M GPS"
+            }
+        },
+        {
+            "shortId": 14,
+            "deviceId": "36b3a392-4391-4286-b30a-30703c4f1e17",
+            "cellGeolocation": {
+                "lat": 61.41738,
+                "lng": 24.156941,
+                "accuracy": 17800,
+                "ts": "2020-02-25T20:11:05.000Z"
+            },
+            "name": "36b3a392-4391-4286-b30a-30703c4f1e17",
+            "humidity": 17.4,
+            "pressure": 987,
+            "airQuality": 186.4,
+            "temp": 21.6,
+            "rsrpDbm": -103,
+            "imei": "352656100440935",
+            "networkInfo": {
+                "currentBand": 20,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 23070,
+                "mccmnc": "24405",
+                "ipAddress": "100.72.107.235 0000:0000:0000:0000:D793:890C:4309:784E",
+                "ueMode": 2,
+                "cellID": 973571,
+                "networkMode": "LTE-M GPS"
+            }
+        },
+        {
+            "shortId": 15,
+            "deviceId": "ceee1f50-2bfa-444c-9221-41e4c1a6d907",
+            "cellGeolocation": {
+                "lat": 52.43989,
+                "lng": 4.832506,
+                "accuracy": 592,
+                "ts": "2020-02-27T21:54:07.309Z"
+            },
+            "name": "ceee1f50-2bfa-444c-9221-41e4c1a6d907",
+            "rsrpDbm": -116,
+            "airQuality": 25,
+            "pressure": 1015,
+            "humidity": 39.5,
+            "temp": 20,
+            "imei": "352656100747586",
+            "networkInfo": {
+                "currentBand": 20,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 62002,
+                "mccmnc": "20408",
+                "ipAddress": "10.160.240.8",
+                "ueMode": 2,
+                "cellID": 253707,
+                "networkMode": "LTE-M GPS"
+            }
+        },
+        {
+            "shortId": 16,
+            "deviceId": "ea6e20ff-79e4-4aaa-ade3-ed1428c1f17b",
+            "cellGeolocation": {
+                "lat": 65.009972,
+                "lng": 25.529406,
+                "accuracy": 2145,
+                "ts": "2020-02-25T10:46:36.000Z"
+            },
+            "name": "ea6e20ff-79e4-4aaa-ade3-ed1428c1f17b",
+            "humidity": 11,
+            "pressure": 1002,
+            "airQuality": 248.2,
+            "temp": 24.5,
+            "rsrpDbm": -85,
+            "imei": "352656100450132",
+            "networkInfo": {
+                "currentBand": 20,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 4090,
+                "mccmnc": "24491",
+                "ipAddress": "10.160.156.26",
+                "ueMode": 2,
+                "cellID": 35857164,
+                "networkMode": "LTE-M GPS"
+            }
+        },
+        {
+            "shortId": 17,
+            "deviceId": "e151d690-6351-4708-876e-4e665d8b296e",
+            "geolocation": {
+                "sentenceId": "GGA",
+                "sentenceName": "Global positioning system fix data",
+                "time": "2020-02-26T10:46:30.550Z",
+                "latitude": 61.491199,
+                "longitude": 23.771788833333332,
+                "fixType": "fix",
+                "satellitesInView": 4,
+                "horizontalDilution": 3.99,
+                "altitudeMeters": 93.51,
+                "geoidalSeperation": 0,
+                "differentialAge": 0,
+                "talkerId": "GP"
+            },
+            "cellGeolocation": {
+                "lat": 61.492054,
+                "lng": 23.764816,
+                "accuracy": 851,
+                "ts": "2020-02-27T07:23:00.423Z"
+            },
+            "name": "e151d690-6351-4708-876e-4e665d8b296e",
+            "airQuality": 84.1,
+            "rsrpDbm": -74,
+            "pressure": 991,
+            "temp": 23.7,
+            "humidity": 10.1,
+            "imei": "352656100449522",
+            "networkInfo": {
+                "currentBand": 8,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 50222,
+                "mccmnc": "24412",
+                "ipAddress": "10.201.167.205",
+                "ueMode": 0,
+                "cellID": 1805149,
+                "networkMode": "NB-IoT GPS"
+            }
+        },
+        {
+            "shortId": 18,
+            "deviceId": "b4e75ee9-0006-4fdb-9159-66f310df72d1",
+            "cellGeolocation": {
+                "lat": 62.665135,
+                "lng": 21.752366,
+                "accuracy": 4141,
+                "ts": "2020-02-26T16:29:44.115Z"
+            },
+            "name": "b4e75ee9-0006-4fdb-9159-66f310df72d1",
+            "pressure": 994,
+            "airQuality": 211,
+            "humidity": 35.3,
+            "temp": 22.5,
+            "rsrpDbm": -95,
+            "imei": "352656100451478",
+            "networkInfo": {
+                "currentBand": 20,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 4200,
+                "mccmnc": "24491",
+                "ipAddress": "10.201.167.57",
+                "ueMode": 2,
+                "cellID": 37275424,
+                "networkMode": "LTE-M GPS"
+            }
+        },
+        {
+            "shortId": 19,
+            "deviceId": "719c5b7d-d633-4cb0-a6f1-47bfa929b202",
+            "cellGeolocation": {
+                "lat": 63.418503,
+                "lng": 10.372201,
+                "accuracy": 2175,
+                "ts": "2020-02-27T10:06:36.744Z"
+            },
+            "name": "719c5b7d-d633-4cb0-a6f1-47bfa929b202",
+            "airQuality": 116.8,
+            "pressure": 990,
+            "humidity": 16.8,
+            "temp": 22,
+            "rsrpDbm": -100,
+            "imei": "352656100442626",
+            "networkInfo": {
+                "currentBand": 20,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 30401,
+                "mccmnc": "24201",
+                "ipAddress": "10.160.65.47",
+                "ueMode": 2,
+                "cellID": 51252226,
+                "networkMode": "LTE-M GPS"
+            }
+        },
+        {
+            "shortId": 20,
+            "deviceId": "9ce23669-dec3-486a-bc58-c9bb1bde1501",
+            "name": "9ce23669-dec3-486a-bc58-c9bb1bde1501",
+            "humidity": 33.6,
+            "pressure": 1017,
+            "airQuality": 38.2,
+            "temp": 22.1,
+            "rsrpDbm": -98,
+            "imei": "352656100442279",
+            "networkInfo": {
+                "currentBand": 13,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 11015,
+                "mccmnc": "311480",
+                "ipAddress": "10.160.242.19",
+                "ueMode": 2,
+                "cellID": 11138563,
+                "networkMode": "LTE-M GPS"
+            }
+        },
+        {
+            "shortId": 21,
+            "deviceId": "48ce1ddb-2a98-4324-a8eb-d64b6ff387d7",
+            "geolocation": {
+                "sentenceId": "GGA",
+                "sentenceName": "Global positioning system fix data",
+                "time": "2020-02-28T07:14:35.730Z",
+                "latitude": 61.36275933333334,
+                "longitude": 5.3994825,
+                "fixType": "fix",
+                "satellitesInView": 5,
+                "horizontalDilution": 2.35,
+                "altitudeMeters": 29.24,
+                "geoidalSeperation": 0,
+                "differentialAge": 0,
+                "talkerId": "GP"
+            },
+            "cellGeolocation": {
+                "lat": 61.36846,
+                "lng": 5.450314,
+                "accuracy": 2651,
+                "ts": "2020-02-26T16:25:58.145Z"
+            },
+            "name": "48ce1ddb-2a98-4324-a8eb-d64b6ff387d7",
+            "rsrpDbm": -86,
+            "airQuality": 59.6,
+            "humidity": 28.4,
+            "pressure": 995,
+            "temp": 19.3,
+            "imei": "352656100442808",
+            "networkInfo": {
+                "currentBand": 20,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 30501,
+                "mccmnc": "24201",
+                "ipAddress": "10.98.91.26 0000:0000:0000:0000:0000:0047:4A9D:2D01",
+                "ueMode": 2,
+                "cellID": 18706432,
+                "networkMode": "LTE-M GPS"
+            }
+        },
+        {
+            "shortId": 22,
+            "deviceId": "90850ee9-d7c6-4922-8fe5-319128c206f9",
+            "geolocation": {
+                "sentenceId": "GGA",
+                "time": "2020-02-27T05:33:59.664Z",
+                "latitude": 22.2860722,
+                "longitude": 114.1536519,
+                "fixType": "manual",
+                "satellitesInView": 0,
+                "horizontalDilution": 0,
+                "altitudeMeters": 0,
+                "geoidalSeperation": 0
+            },
+            "name": "90850ee9-d7c6-4922-8fe5-319128c206f9",
+            "airQuality": 159.9,
+            "pressure": 1007,
+            "humidity": 54.7,
+            "temp": 24.3,
+            "rsrpDbm": -73,
+            "imei": "352656100439572",
+            "networkInfo": {
+                "currentBand": 3,
+                "supportedBands": "(3)\r\n",
+                "areaCode": 1432,
+                "mccmnc": "45400",
+                "ipAddress": "10.12.0.140",
+                "ueMode": 0,
+                "cellID": 27623306,
+                "networkMode": "NB-IoT GPS"
+            }
+        },
+        {
+            "shortId": 23,
+            "deviceId": "511d0a43-aa83-4317-805c-9b6d44b67ac6",
+            "name": "511d0a43-aa83-4317-805c-9b6d44b67ac6",
+            "humidity": 31.1,
+            "airQuality": 25,
+            "temp": 26.5,
+            "pressure": 1032,
+            "rsrpDbm": -89
+        },
+        {
+            "shortId": 24,
+            "deviceId": "dbf45697-c8ef-4df5-af9d-839ae54457c3",
+            "name": "dbf45697-c8ef-4df5-af9d-839ae54457c3",
+            "airQuality": 25,
+            "pressure": 1023,
+            "humidity": 27.9,
+            "temp": 26.2,
+            "rsrpDbm": -90,
+            "imei": "352656100743965",
+            "networkInfo": {
+                "currentBand": 13,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 1285,
+                "mccmnc": "311480",
+                "ipAddress": "10.160.7.200",
+                "ueMode": 2,
+                "cellID": 1383937,
+                "networkMode": "LTE-M GPS"
+            }
+        },
+        {
+            "shortId": 25,
+            "deviceId": "8e08125b-5a05-4a8e-b2d3-3ebf05fc3f12",
+            "name": "8e08125b-5a05-4a8e-b2d3-3ebf05fc3f12",
+            "temp": 18.5,
+            "airQuality": 37.4,
+            "pressure": 1027,
+            "humidity": 44.9,
+            "rsrpDbm": -99
+        },
+        {
+            "shortId": 26,
+            "deviceId": "11daf5da-66f0-4f1f-b1b0-1830cfff54f4",
+            "name": "11daf5da-66f0-4f1f-b1b0-1830cfff54f4",
+            "rsrpDbm": -126,
+            "airQuality": 25,
+            "pressure": 955,
+            "humidity": 34.8,
+            "temp": 25.7
+        },
+        {
+            "shortId": 27,
+            "deviceId": "6a6deadc-ff9a-434b-b773-27fbaf68fc1e",
+            "cellGeolocation": {
+                "lat": 35.457963,
+                "lng": 139.624449,
+                "accuracy": 248,
+                "ts": "2020-02-27T03:10:36.944Z"
+            },
+            "name": "6a6deadc-ff9a-434b-b773-27fbaf68fc1e",
+            "humidity": 63.5,
+            "pressure": 1020,
+            "airQuality": 60.1,
+            "temp": 19.7,
+            "rsrpDbm": -87,
+            "imei": "352656100744120",
+            "networkInfo": {
+                "currentBand": 1,
+                "supportedBands": "(1,8)\r\n",
+                "areaCode": 4202,
+                "mccmnc": "44020",
+                "ipAddress": "10.149.228.109",
+                "ueMode": 2,
+                "cellID": 10720771,
+                "networkMode": "LTE-M GPS"
+            }
+        },
+        {
+            "shortId": 28,
+            "deviceId": "62d22967-5436-4292-80aa-f7061dcc1bf9",
+            "cellGeolocation": {
+                "lat": 46.227699,
+                "lng": 7.306004,
+                "accuracy": 15804,
+                "ts": "2020-02-27T09:14:44.300Z"
+            },
+            "name": "62d22967-5436-4292-80aa-f7061dcc1bf9",
+            "pressure": 957,
+            "airQuality": 252.4,
+            "humidity": 36,
+            "temp": 11.1,
+            "rsrpDbm": -83,
+            "imei": "352656100755407",
+            "networkInfo": {
+                "currentBand": 20,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 3030,
+                "mccmnc": "22801",
+                "ipAddress": "10.133.64.130",
+                "ueMode": 2,
+                "cellID": 17263624,
+                "networkMode": "LTE-M GPS"
+            }
+        },
+        {
+            "shortId": 29,
+            "deviceId": "725a113b-b82d-4a78-a538-c3bfc7ae7ab3",
+            "geolocation": {
+                "sentenceId": "GGA",
+                "sentenceName": "Global positioning system fix data",
+                "time": "2020-02-26T21:50:12.460Z",
+                "latitude": 49.45823683333333,
+                "longitude": 11.035931,
+                "fixType": "fix",
+                "satellitesInView": 5,
+                "horizontalDilution": 6.69,
+                "altitudeMeters": 333.6,
+                "geoidalSeperation": 0,
+                "differentialAge": 0,
+                "talkerId": "GP"
+            },
+            "cellGeolocation": {
+                "lat": 48.402217,
+                "lng": 11.832103,
+                "accuracy": 11996,
+                "ts": "2020-02-27T21:44:49.282Z"
+            },
+            "name": "725a113b-b82d-4a78-a538-c3bfc7ae7ab3",
+            "humidity": 44.5,
+            "pressure": 946,
+            "airQuality": 25,
+            "temp": 22.8,
+            "rsrpDbm": -124,
+            "imei": "352656100743452",
+            "networkInfo": {
+                "currentBand": 8,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 52097,
+                "mccmnc": "26201",
+                "ipAddress": "100.118.124.22",
+                "ueMode": 0,
+                "cellID": 28068105,
+                "networkMode": "NB-IoT GPS"
+            }
+        },
+        {
+            "shortId": 30,
+            "deviceId": "6f2efb9e-db93-4483-ba09-1cf9fbf11686",
+            "cellGeolocation": {
+                "lat": 65.012603,
+                "lng": 25.517203,
+                "accuracy": 864,
+                "ts": "2020-02-27T09:29:18.898Z"
+            },
+            "name": "6f2efb9e-db93-4483-ba09-1cf9fbf11686",
+            "airQuality": 210.3,
+            "humidity": 8.8,
+            "pressure": 1002,
+            "temp": 25.9,
+            "rsrpDbm": -98,
+            "imei": "352656100442725",
+            "networkInfo": {
+                "currentBand": 3,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 12002,
+                "mccmnc": "24412",
+                "ipAddress": "10.160.56.212",
+                "ueMode": 2,
+                "cellID": 193793,
+                "networkMode": "LTE-M GPS"
+            }
+        },
+        {
+            "shortId": 31,
+            "deviceId": "f413b490-1917-44a2-9589-a33d730fab56",
+            "geolocation": {
+                "sentenceId": "GGA",
+                "time": "2020-02-27T10:16:09.002Z",
+                "latitude": 31.231276,
+                "longitude": 121.470006,
+                "fixType": "manual",
+                "satellitesInView": 0,
+                "horizontalDilution": 0,
+                "altitudeMeters": 0,
+                "geoidalSeperation": 0
+            },
+            "name": "Smile",
+            "pressure": 1014,
+            "humidity": 54.1,
+            "rsrpDbm": -72,
+            "temp": 18.3,
+            "airQuality": 41.4,
+            "imei": "352656100826257",
+            "networkInfo": {
+                "currentBand": 8,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 23441,
+                "mccmnc": "46000",
+                "ipAddress": "100.81.152.154",
+                "ueMode": 0,
+                "cellID": 15527002,
+                "networkMode": "NB-IoT GPS"
+            }
+        },
+        {
+            "shortId": 32,
+            "deviceId": "c2c56ea8-b6fd-42b9-a3d6-c2737ecbbfcb",
+            "cellGeolocation": {
+                "lat": 65.333026,
+                "lng": 25.373625,
+                "accuracy": 2729,
+                "ts": "2020-02-27T06:13:35.496Z"
+            },
+            "name": "c2c56ea8-b6fd-42b9-a3d6-c2737ecbbfcb",
+            "rsrpDbm": -92,
+            "airQuality": 250,
+            "humidity": 11.2,
+            "pressure": 1002,
+            "temp": 23.2,
+            "imei": "352656100449647",
+            "networkInfo": {
+                "currentBand": 3,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 4090,
+                "mccmnc": "24491",
+                "ipAddress": "10.71.216.91",
+                "ueMode": 2,
+                "cellID": 36364319,
+                "networkMode": "LTE-M GPS"
+            }
+        },
+        {
+            "shortId": 33,
+            "deviceId": "eaa6c2f9-b1de-42e3-9b27-b519a620757f",
+            "geolocation": {
+                "sentenceId": "GGA",
+                "sentenceName": "Global positioning system fix data",
+                "time": "2020-02-27T07:12:03.000Z",
+                "latitude": 61.49121433333333,
+                "longitude": 23.771379333333332,
+                "fixType": "fix",
+                "satellitesInView": 7,
+                "horizontalDilution": 3.82,
+                "altitudeMeters": 134.33,
+                "geoidalSeperation": 0,
+                "differentialAge": 0,
+                "talkerId": "GP"
+            },
+            "name": "eaa6c2f9-b1de-42e3-9b27-b519a620757f",
+            "rsrpDbm": -61,
+            "airQuality": 250,
+            "pressure": 990,
+            "humidity": 12.3,
+            "temp": 23.3,
+            "imei": "352656100829392",
+            "networkInfo": {
+                "currentBand": 8,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 50222,
+                "mccmnc": "24412",
+                "ipAddress": "10.201.167.205",
+                "ueMode": 0,
+                "cellID": 1805149,
+                "networkMode": "NB-IoT GPS"
+            }
+        },
+        {
+            "shortId": 34,
+            "deviceId": "6dc818fd-ecf9-43d4-b55d-9dc194cdedf4",
+            "geolocation": {
+                "sentenceId": "GGA",
+                "sentenceName": "Global positioning system fix data",
+                "time": "2020-02-28T06:30:01.900Z",
+                "latitude": 65.01227733333333,
+                "longitude": 25.51208383333333,
+                "fixType": "fix",
+                "satellitesInView": 6,
+                "horizontalDilution": 2.19,
+                "altitudeMeters": 45.63,
+                "geoidalSeperation": 0,
+                "differentialAge": 0,
+                "talkerId": "GP"
+            },
+            "name": "6dc818fd-ecf9-43d4-b55d-9dc194cdedf4",
+            "rsrpDbm": -112,
+            "airQuality": 250,
+            "temp": 27.6,
+            "humidity": 9.2,
+            "pressure": 1002
+        },
+        {
+            "shortId": 35,
+            "deviceId": "e9b75cbb-a295-4b7c-84b4-c01f967f5746",
+            "cellGeolocation": {
+                "lat": 65.011245,
+                "lng": 25.511605,
+                "accuracy": 376,
+                "ts": "2020-02-27T11:03:12.884Z"
+            },
+            "name": "e9b75cbb-a295-4b7c-84b4-c01f967f5746",
+            "humidity": 11,
+            "pressure": 1002,
+            "airQuality": 250,
+            "temp": 23.4,
+            "rsrpDbm": -99,
+            "imei": "352656100444101",
+            "networkInfo": {
+                "currentBand": 3,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 12002,
+                "mccmnc": "24412",
+                "ipAddress": "10.177.228.23",
+                "ueMode": 2,
+                "cellID": 193794,
+                "networkMode": "LTE-M GPS"
+            }
+        },
+        {
+            "shortId": 36,
+            "deviceId": "fa37cdc0-42ea-4f3c-9c2e-003b05173f74",
+            "name": "fa37cdc0-42ea-4f3c-9c2e-003b05173f74",
+            "temp": 22.8,
+            "pressure": 997,
+            "rsrpDbm": -77,
+            "humidity": 16.5,
+            "airQuality": 25,
+            "imei": "352656100441818",
+            "networkInfo": {
+                "currentBand": 20,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 4099,
+                "mccmnc": "24491",
+                "ipAddress": "10.81.171.87",
+                "ueMode": 0,
+                "cellID": 35857170,
+                "networkMode": "NB-IoT GPS"
+            }
+        },
+        {
+            "shortId": 37,
+            "deviceId": "0eebbf71-68fe-4a04-a3bb-7d51c7890c40",
+            "geolocation": {
+                "sentenceId": "GGA",
+                "sentenceName": "Global positioning system fix data",
+                "time": "2020-02-26T15:37:05.870Z",
+                "latitude": 63.421238833333334,
+                "longitude": 10.4370535,
+                "fixType": "fix",
+                "satellitesInView": 5,
+                "horizontalDilution": 1.89,
+                "altitudeMeters": 144.77,
+                "geoidalSeperation": 0,
+                "differentialAge": 0,
+                "talkerId": "GP"
+            },
+            "name": "MATA",
+            "rsrpDbm": -87,
+            "airQuality": 242.2,
+            "pressure": 982,
+            "humidity": 10.9,
+            "temp": 23.2,
+            "imei": "352656100248049",
+            "networkInfo": {
+                "currentBand": 20,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 3305,
+                "mccmnc": "24202",
+                "ipAddress": "10.81.163.130",
+                "ueMode": 0,
+                "cellID": 35496978,
+                "networkMode": "NB-IoT GPS"
+            }
+        },
+        {
+            "shortId": 38,
+            "deviceId": "5bae374d-97c4-4d14-a099-e3cd14ef665c",
+            "cellGeolocation": {
+                "lat": 63.412251,
+                "lng": 10.466576,
+                "accuracy": 2565,
+                "ts": "2020-02-27T17:23:53.080Z"
+            },
+            "name": "5bae374d-97c4-4d14-a099-e3cd14ef665c",
+            "airQuality": 250,
+            "temp": 23.9,
+            "pressure": 982,
+            "humidity": 18.9,
+            "rsrpDbm": -68,
+            "imei": "352656100829459",
+            "networkInfo": {
+                "currentBand": 20,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 30401,
+                "mccmnc": "24201",
+                "ipAddress": "10.122.21.7 2A02:2121:0085:0F2A:0000:0001:D880:1C01",
+                "ueMode": 2,
+                "cellID": 21657859,
+                "networkMode": "LTE-M GPS"
+            }
+        },
+        {
+            "shortId": 39,
+            "deviceId": "4c0bb0bd-5571-4825-ba11-9deeb6671bf7",
+            "cellGeolocation": {
+                "lat": 60.45265,
+                "lng": 22.293258,
+                "accuracy": 566,
+                "ts": "2020-02-28T06:12:52.862Z"
+            },
+            "name": "4c0bb0bd-5571-4825-ba11-9deeb6671bf7",
+            "rsrpDbm": -96,
+            "temp": 23.2,
+            "humidity": 11.2,
+            "pressure": 998,
+            "airQuality": 66.4,
+            "imei": "352656100449340",
+            "networkInfo": {
+                "currentBand": 3,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 3202,
+                "mccmnc": "24412",
+                "ipAddress": "10.160.116.246",
+                "ueMode": 2,
+                "cellID": 21505,
+                "networkMode": "LTE-M GPS"
+            }
+        },
+        {
+            "shortId": 40,
+            "deviceId": "e0e94fe7-584e-4c20-9902-7386dab4e98f",
+            "name": "e0e94fe7-584e-4c20-9902-7386dab4e98f",
+            "temp": 34.9,
+            "humidity": 17.7,
+            "pressure": 1030,
+            "airQuality": 185.5,
+            "rsrpDbm": -91,
+            "imei": "352656100986747",
+            "networkInfo": {
+                "currentBand": 13,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 1285,
+                "mccmnc": "311480",
+                "ipAddress": "10.160.203.241",
+                "ueMode": 2,
+                "cellID": 1383937,
+                "networkMode": "LTE-M GPS"
+            }
+        },
+        {
+            "shortId": 41,
+            "deviceId": "ec51c005-5259-4788-91d2-516931dc0d4a",
+            "name": "ec51c005-5259-4788-91d2-516931dc0d4a",
+            "temp": 16.1,
+            "humidity": 47.1,
+            "pressure": 1027,
+            "airQuality": 25,
+            "rsrpDbm": -90,
+            "imei": "352656100247447",
+            "networkInfo": {
+                "currentBand": 8,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 23441,
+                "mccmnc": "46000",
+                "ipAddress": "100.74.16.204",
+                "ueMode": 0,
+                "cellID": 15527002,
+                "networkMode": "NB-IoT GPS"
+            }
+        },
+        {
+            "shortId": 42,
+            "deviceId": "b92f3ce5-3039-4ee5-8ee0-2ccb9f28e09b",
+            "geolocation": {
+                "sentenceId": "GGA",
+                "sentenceName": "Global positioning system fix data",
+                "time": "2020-02-28T07:42:51.130Z",
+                "latitude": 65.01277916666666,
+                "longitude": 25.511953833333333,
+                "fixType": "fix",
+                "satellitesInView": 9,
+                "horizontalDilution": 1.15,
+                "altitudeMeters": 55.87,
+                "geoidalSeperation": 0,
+                "differentialAge": 0,
+                "talkerId": "GP"
+            },
+            "cellGeolocation": {
+                "lat": 65.012603,
+                "lng": 25.517203,
+                "accuracy": 864,
+                "ts": "2020-02-27T09:00:38.394Z"
+            },
+            "name": "b92f3ce5-3039-4ee5-8ee0-2ccb9f28e09b",
+            "temp": 23.3,
+            "humidity": 10.8,
+            "pressure": 1002,
+            "airQuality": 171.1,
+            "rsrpDbm": -96,
+            "imei": "352656100442642",
+            "networkInfo": {
+                "currentBand": 3,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 12002,
+                "mccmnc": "24412",
+                "ipAddress": "10.160.50.54",
+                "ueMode": 2,
+                "cellID": 193793,
+                "networkMode": "LTE-M GPS"
+            }
+        },
+        {
+            "shortId": 43,
+            "deviceId": "32c129ad-4364-403a-a15f-cc0cac946a77",
+            "geolocation": {
+                "sentenceId": "GGA",
+                "sentenceName": "Global positioning system fix data",
+                "time": "2020-02-27T22:44:27.900Z",
+                "latitude": 45.525080833333334,
+                "longitude": -122.6855515,
+                "fixType": "fix",
+                "satellitesInView": 5,
+                "horizontalDilution": 2.69,
+                "altitudeMeters": 149.81,
+                "geoidalSeperation": 0,
+                "differentialAge": 0,
+                "talkerId": "GP"
+            },
+            "name": "32c129ad-4364-403a-a15f-cc0cac946a77",
+            "temp": 22.8,
+            "humidity": 32.8,
+            "pressure": 1023,
+            "airQuality": 53.3,
+            "rsrpDbm": -86,
+            "imei": "352656100986929",
+            "networkInfo": {
+                "currentBand": 13,
+                "supportedBands": "(2,3,4,8,12,13,20,28)\r\n",
+                "areaCode": 1285,
+                "mccmnc": "311480",
+                "ipAddress": "10.160.125.55",
+                "ueMode": 2,
+                "cellID": 1383937,
+                "networkMode": "LTE-M GPS"
+            }
+        }
+    ]
+}

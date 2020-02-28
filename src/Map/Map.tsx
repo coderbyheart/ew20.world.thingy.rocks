@@ -1,0 +1,386 @@
+import React, { createRef, useState } from 'react'
+import { renderToString } from 'react-dom/server'
+import {
+	Map as LeafletMap,
+	TileLayer,
+	Marker,
+	Popup,
+	Circle,
+} from 'react-leaflet'
+import * as L from 'leaflet'
+import { createGlobalStyle } from 'styled-components'
+import { GGAPacket } from 'nmea-simple'
+import { RSRP, RSRPBar, dbmToRSRP } from '@bifravst/rsrp-bar'
+import styled from 'styled-components'
+import { DeviceSelector, DeviceHiddenMap } from './DeviceSelector'
+import { filter as filterOperator } from 'mcc-mnc-list'
+import deviceData from '../../assets/devices.json'
+
+import MapIcon from '../../assets/marker.svg'
+
+export type Device = {
+	deviceId: string
+	color: string
+	name: string
+	geolocation?: GGAPacket
+	cellGeolocation?: {
+		lat: number
+		lng: number
+		accuracy: number
+		ts: string
+	}
+	temp?: number
+	airQuality?: number
+	humidity?: number
+	pressure?: number
+	rsrpDbm?: number
+	imei?: string
+	mccmnc?: string
+	networkInfo?: { mccmnc: string; cellID: number; areaCode: number }
+}
+
+const colors = [
+	'#03a8a0',
+	'#039c4b',
+	'#66d313',
+	'#fedf17',
+	'#ff0984',
+	'#21409a',
+	'#04adff',
+	'#e48873',
+	'#f16623',
+	'#f44546',
+	'#1f73b7',
+	'#04444d',
+	'#038153',
+	'#ed961c',
+	'#cc3340',
+	'#a81897',
+	'#d42054',
+	'#c72a1c',
+	'#c44f00',
+	'#ffbb10',
+	'#058541',
+	'#028079',
+	'#1371d6',
+	'#3353e2',
+	'#6a27b8',
+	'#337fbd',
+	'#335d63',
+	'#228f67',
+	'#f5a133',
+	'#d93f4c',
+	'#d653c2',
+	'#ec4d63',
+	'#e34f32',
+	'#de701d',
+	'#ffd424',
+	'#00a656',
+	'#02a191',
+	'#3091ec',
+	'#5d7df5',
+	'#b552e2',
+]
+
+const colorGenerator = (function* () {
+	let i = 0
+	while (true) {
+		yield colors[i]
+		i = (i + 1) % colors.length
+	}
+})()
+
+const airQualityColors = {
+	A: '#00e400',
+	B: '#92d050',
+	C: '#ffff00',
+	D: '#ff7e00',
+	E: '#ff0000',
+	F: '#99004c',
+	G: '#663300',
+}
+
+const StyledRSRPBar = styled(RSRPBar)`
+	width: 30px;
+	height: 30px;
+	color: #e826e1;
+`
+
+const StyledMapIcon = styled(MapIcon)`
+	width: 30px;
+	height: 45px;
+	margin-left: 45px;
+`
+
+const Operator = styled.span`
+	position: absolute;
+	bottom: 0;
+	left: 15px;
+	line-height: 1;
+	color: #fff;
+	text-shadow: 1px 1px 1px #000000a0, -1px 1px 1px #000000a0,
+		1px -1px 1px #000000a0, -1px -1px 1px #000000a0;
+	font-size: 12px;
+`
+
+const CustomIconStyle = createGlobalStyle`
+	.thingyIcon {
+		position: relative;
+		div.label {
+			width: 100%;
+			text-align: center;
+			color: #000000fa;
+			font-weight: bold;
+			display: block;
+			height: 40px;
+			overflow: hidden;
+			white-space:nowrap;
+			display: flex;
+    		align-items: center;
+    		flex-direction: column;
+			justify-content: flex-end;
+			span.temp {
+				text-shadow: 1px 1px 1px #fff, -1px 1px 1px #fff, 1px -1px 1px #fff, -1px -1px 1px #fff;
+			}
+			${Object.entries(airQualityColors).map(
+	([k, c]) => `.airquality-${k} { 
+					text-shadow: 1px 1px 2px ${c}, -1px 1px 2px ${c}, 1px -1px 2px ${c}, -1px -1px 2px ${c};
+				 }`,
+)}
+		}
+	}
+`
+
+/**
+ * @see https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME680-DS001.pdf
+ */
+const describeAirQuality = (
+	airQuality: number,
+): { rating: string; description: string } => {
+	if (airQuality > 351)
+		return {
+			description: 'Extremely polluted',
+			rating: 'G',
+		}
+	if (airQuality > 250) return { description: 'Severely polluted', rating: 'F' }
+	if (airQuality > 200) return { description: 'Heavily polluted', rating: 'E' }
+	if (airQuality > 150)
+		return { description: 'Moderately polluted', rating: 'D' }
+	if (airQuality > 100) return { description: 'Lightly polluted', rating: 'C' }
+	if (airQuality > 50) return { description: 'Good', rating: 'B' }
+	return { description: 'Excellent', rating: 'A' }
+}
+
+export const byIMEI = (
+	{ deviceId: ad, imei: ai }: Device,
+	{ deviceId: bd, imei: bi }: Device,
+) => (ai || ad).localeCompare(bi || bd)
+
+const devices: Device[] = (deviceData.devices as unknown as any[]).map((device: any) => ({
+	...device,
+	color: colorGenerator.next().value,
+}))
+
+export const Map = () => {
+	let zoom = 13
+	const userZoom = window.localStorage.getItem('map:zoom')
+	if (userZoom) {
+		zoom = parseInt(userZoom, 10)
+	}
+	const mapRef = createRef<LeafletMap>()
+	const [devicesHidden, setDevicesHidden] = useState<DeviceHiddenMap>({})
+
+	const center = (c => (c ? JSON.parse(c) : [63.4210966, 10.4378928]))(
+		window.localStorage.getItem('map:center'),
+	)
+
+	return (
+		<>
+			<LeafletMap
+				center={center}
+				zoom={zoom}
+				ref={mapRef}
+				onzoomend={() => {
+					if (
+						mapRef.current &&
+						mapRef.current.viewport &&
+						mapRef.current.viewport.zoom
+					) {
+						window.localStorage.setItem(
+							'map:zoom',
+							`${mapRef.current.viewport.zoom}`,
+						)
+					}
+				}}
+				ondragend={() => {
+					if (
+						mapRef.current &&
+						mapRef.current.viewport &&
+						mapRef.current.viewport.center
+					) {
+						window.localStorage.setItem(
+							'map:center',
+							JSON.stringify(mapRef.current.viewport.center),
+						)
+					}
+				}}
+			>
+				<CustomIconStyle />
+				<TileLayer
+					attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+					url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+				/>
+				{devices.map(
+					(
+						{
+							cellGeolocation,
+							geolocation,
+							name,
+							deviceId,
+							temp,
+							airQuality,
+							humidity,
+							pressure,
+							rsrpDbm,
+							color,
+							networkInfo,
+							imei,
+						},
+						k,
+					) => {
+						if (!geolocation && !cellGeolocation) return null
+						if (devicesHidden[deviceId] === true) return null
+						const geolocationTime = geolocation?.time
+							? new Date(geolocation.time).getTime()
+							: 0
+						const cellGeolocationTime = cellGeolocation?.ts
+							? new Date(cellGeolocation.ts).getTime()
+							: 0
+
+						let markerPos = (geolocation
+							? { lat: geolocation.latitude, lng: geolocation.longitude }
+							: cellGeolocation) as { lat: number; lng: number }
+
+						if (cellGeolocation && cellGeolocationTime > geolocationTime) {
+							markerPos = cellGeolocation
+						}
+
+						const op = networkInfo?.mccmnc
+							? filterOperator({
+								mccmnc: `${networkInfo.mccmnc}`,
+							})?.[0]?.brand
+							: undefined
+
+						return (
+							<React.Fragment key={k}>
+								{cellGeolocation &&
+									(!geolocation || cellGeolocationTime > geolocationTime) && (
+										<Circle
+											center={cellGeolocation}
+											radius={cellGeolocation.accuracy}
+											color={color}
+										/>
+									)}
+								<Marker
+									icon={L.divIcon({
+										className: `thingyIcon`,
+										iconSize: [120, 85],
+										iconAnchor: [60, 85],
+										popupAnchor: [0, -40],
+										html: renderToString(
+											<>
+												<div className="label">
+													{temp && <span className="temp">{temp}°C</span>}
+													{airQuality && (
+														<span
+															className={`airquality airquality-${
+																describeAirQuality(airQuality).rating
+																}`}
+														>
+															{describeAirQuality(airQuality).description}
+														</span>
+													)}
+												</div>
+												<StyledMapIcon style={{ color }} />
+												{rsrpDbm && (
+													<RSRP
+														rsrp={dbmToRSRP(rsrpDbm)}
+														renderBar={({ quality }) =>
+															quality === 0 ? (
+																<StyledRSRPBar quality={0} />
+															) : (
+																	<StyledRSRPBar quality={quality} />
+																)
+														}
+														renderInvalid={() => <span>❎</span>}
+													/>
+												)}
+												{op && <Operator>{op}</Operator>}
+											</>,
+										),
+									})}
+									position={markerPos}
+								>
+									<Popup>
+										Device:{' '}{name}<br />
+										{imei && (
+											<>
+												IMEI: {imei}
+												<br />
+											</>
+										)}
+										{op && (
+											<>
+												Operator: {op}
+												<br />
+											</>
+										)}
+										{rsrpDbm && (
+											<>
+												RSRP: {rsrpDbm}dbm
+												<br />
+											</>
+										)}
+										{temp && (
+											<>
+												Temperature: {temp}°C
+												<br />
+											</>
+										)}
+										{humidity && (
+											<>
+												Humidity: {humidity}%
+												<br />
+											</>
+										)}
+										{pressure && (
+											<>
+												Pressure: {pressure}hPa
+												<br />
+											</>
+										)}
+										{airQuality && (
+											<>
+												<a
+													href="https://blog.nordicsemi.com/getconnected/bosch-sensortec-bme680-the-nose-of-nordics-thingy91"
+													target="_blank"
+													rel="noopener nofollow"
+												>
+													Air Quality
+												</a>
+												: {describeAirQuality(airQuality).description} (
+												{airQuality})
+												<br />
+											</>
+										)}
+									</Popup>
+								</Marker>
+							</React.Fragment>
+						)
+					},
+				)}
+			</LeafletMap>
+			<DeviceSelector devices={devices} onUpdate={setDevicesHidden} />
+		</>
+	)
+}
