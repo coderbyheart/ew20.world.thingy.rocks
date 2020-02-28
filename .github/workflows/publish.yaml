@@ -40,6 +40,6 @@ jobs:
           CHANGED=$(git diff-index --name-only HEAD -- assets/main.js)
           if [ -n "$CHANGED" ]; then
               git add assets/main.js
-              git commit -m "Updated JavaScript build"
+              git commit -m "build: update JavaScript build"
               git push
           fi
