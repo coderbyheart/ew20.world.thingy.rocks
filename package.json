@@ -65,7 +65,7 @@
       "prettier --write"
     ],
     "src/*.{ts,tsx}": [
-      "eslint --ext .js,.tsx --parser-options {\"project\":\"./web/tsconfig.json\"}"
+      "eslint --ext .js,.tsx --parser-options {\"project\":\"./src/tsconfig.json\"}"
     ]
   },
   "engines": {
