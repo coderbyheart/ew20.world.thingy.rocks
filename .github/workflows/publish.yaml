@@ -38,6 +38,7 @@ jobs:
           echo "machine github.com login coderbyheart password ${GITHUB_TOKEN}" > ~/.netrc
           git config user.email "actions@example.com"
           git config user.name "GitHub Actions"
+          git status
           CHANGED=$(git diff-index --name-only HEAD -- assets/main.js)
           if [ -n "$CHANGED" ]; then
               git add assets/main.js
