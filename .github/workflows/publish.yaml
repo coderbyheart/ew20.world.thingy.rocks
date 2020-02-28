@@ -41,5 +41,5 @@ jobs:
           if [ -n "$CHANGED" ]; then
               git add assets/main.js
               git commit -m "build: update JavaScript build"
-              git push
+              git push origin HEAD:gh-pages
           fi
