@@ -37,7 +37,9 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "github@example.com"
-          git diff-index --quiet HEAD assets/main.js \
-            && git add assets/main.js \
-            && git commit -m "Updated JavaScript build" \
-            && git push
+          CHANGED=$(git diff-index --name-only HEAD -- assets/main.js)
+          if [ -n "$CHANGED" ]; then
+              git add assets/main.js
+              git commit -m "Updated JavaScript build"
+              git push
+          fi
