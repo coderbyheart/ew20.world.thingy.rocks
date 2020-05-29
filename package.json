@@ -31,7 +31,7 @@
     "nmea-simple": "^3.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-leaflet": "^2.6.3"
+    "react-leaflet": "^2.7.0"
   },
   "devDependencies": {
     "@bifravst/code-style": "^7.1.1",
